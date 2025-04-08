@@ -2,6 +2,9 @@
 
 return [
 
+    'app_password' => env('APP_PASSWORD', 'password123'),
+    'api_token' => env('API_TOKEN', '12345678'),
+
     /*
     |--------------------------------------------------------------------------
     | Authentication Defaults
@@ -12,6 +15,7 @@ return [
     | as required, but they're a perfect start for most applications.
     |
     */
+    
 
     'defaults' => [
         'guard' => env('AUTH_GUARD', 'web'),
