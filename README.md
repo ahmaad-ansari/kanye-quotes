@@ -56,13 +56,7 @@ APP_PASSWORD=your_password_here
 API_TOKEN=your_api_token_here
 ```
 
-### 4. Run database migrations:
-
-```bash
-php artisan migrate
-```
-
-### 5. Compile front-end assets (Tailwind CSS):
+### 4. Compile front-end assets (Tailwind CSS):
 
 ```bash
 npm run dev
