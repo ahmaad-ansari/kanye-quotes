@@ -43,9 +43,7 @@ npm install
 cp .env.example .env
 ```
 
--   Set up your environment variables, including the `APP_KEY`, `APP_PASSWORD`, and `API_TOKEN`.
-
-    You can generate the `APP_KEY` by running the following command:
+-   Set up your environment variables, including the `APP_KEY`. You can generate the `APP_KEY` by running the following command:
 
 ```bash
 php artisan key:generate
@@ -54,8 +52,8 @@ php artisan key:generate
 -   Make sure to set a password for the authentication in your `.env` file:
 
 ```env
-AUTH_APP_PASSWORD=your_password_here
-AUTH_API_TOKEN=your_api_token_here
+APP_PASSWORD=your_password_here
+API_TOKEN=your_api_token_here
 ```
 
 ### 4. Run database migrations:
@@ -92,7 +90,7 @@ Authorization: Bearer {YOUR_API_TOKEN}
 ### Authentication:
 
 -   To access the quote page, the user must log in by providing the correct password defined in the `.env` file.
--   The password can be changed by updating the `AUTH_APP_PASSWORD` value in your `.env`.
+-   The password can be changed by updating the `APP_PASSWORD` value in your `.env`.
 
 ### Tests
 
